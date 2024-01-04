@@ -1,26 +1,48 @@
 # String Sorter
 
 ## Description
-A simple PHP app that sorts a string using different sorting strategies such as Bubble Sort, Merge Sort, and Quick Sort.
+String Sorter is a PHP application designed to sort input strings using various sorting strategies, including Bubble Sort, Merge Sort, and Quick Sort.
 
 ## Requirements
-1. An input string should be sorted:
-    - Input: ecbda
-    - Output: abcde
-2. There should be user interface to support user input:
-    - Input text for user input
-    - Select box for user to select what type of sort strategy to use
-    - Button to submit or proceed to sort
-    - Output Label for the sorted output
-3. Implement design patterns:
-    - Strategy Pattern
-    - MVC pattern without using any framework
-4. Follow development practices and ensure validation are in place.
-5. Do an automated test (optional)
+1. **Sorting Functionality:**
+    - Given an input string, the application should produce the sorted output.
+      - **Example:**
+        - Input: `ecbda`
+        - Output: `abcde`
+
+2. **User Interface:**
+    - The user interface includes the following components:
+        - Input text box for user input.
+        - Select box to choose a sorting strategy (Bubble Sort, Merge Sort, Quick Sort).
+        - Button to initiate the sorting process.
+        - Output label to display the sorted result.
+
+3. **Design Patterns:**
+    - Implemented design patterns:
+        - **Strategy Pattern:** Different sorting algorithms are encapsulated as strategies, making them interchangeable.
+        - **MVC Pattern:** The application follows the Model-View-Controller (MVC) pattern without relying on any framework.
+
+4. **Development Practices:**
+    - The code adheres to best development practices, including validation checks to ensure data integrity and security.
+
+5. **Automated Testing (Optional):**
+    - Automated tests are available to verify the functionality of individual sorting algorithms.
+      - To run tests, navigate to the `/test` folder and execute the following commands:
+        - `cd /test`
+        - `php BubbleSort.php`
+        - `php MergeSort.php`
+        - `php QuickSort.php`
+
+## Usage
+1. Clone the repository to your local machine.
+2. Open the application in a PHP-supported environment.
+3. Use the provided user interface to enter an input string and select a sorting strategy.
+4. Click the sort button to view the sorted output.
 
 ## Testing
-1. Go to /test folder then run the tests
-    - cd /test 
-    - php BubbleSort.php
-    - php MergeSort.php
-    - php QuickSort.php
+To run automated tests for individual sorting algorithms, follow these steps:
+```bash
+cd /test
+php BubbleSort.php
+php MergeSort.php
+php QuickSort.php
